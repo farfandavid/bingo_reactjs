@@ -1,38 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-image: linear-gradient(0deg, #F0942F, #E57521);
+  padding: 0 5%;
+  min-height: 100vh;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-size: 5em;
+  font-family: 'Luckiest Guy', cursive;
+  background: -webkit-linear-gradient(#ff8554, #ca2a02);
+  color: transparent;
+  font-weight: bolder;
+  -webkit-text-stroke: 2px white;
+  background-clip: text;
+  margin: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h2 {
+  margin: 10px;
+}
+
+.listaNumeros {
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 15px;
+
+
+}
+
+.listaNumeros>p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px 5px;
+  width: 30px;
+  height: 30px;
+  border: 5px double black;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bolder;
+  background-color: white;
+
+}
+
+.si {
+
+  background-color: rgb(90, 90, 90) !important;
+}
+
+
+.content-number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  margin-top: 20px;
+  width: 10ch;
+  height: 5ch;
+  border-radius: 20px;
+  border: 2px solid #f8f8f8;
+  background-color: #D15011;
+  color: white;
+  font-weight: bolder;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #B32704;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .App {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+
+  h1 {
+    font-size: 3em;
   }
+
+  .listaNumeros {
+    max-height: 175px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+  }
+
 }
